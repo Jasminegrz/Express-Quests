@@ -29,6 +29,8 @@ app.put("/api/users/:id", userHandlers.updateUsers);
 
 app.delete("/api/movies/:id", movieHandlers.deleteMovies);
 
+app.delete("/api/users/:id", userHandlers.deleteUsers);
+
 app.listen(port, (err) => {
   if (err) {
     console.error("Something bad happened");
